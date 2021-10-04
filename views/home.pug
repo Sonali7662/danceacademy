@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js") 
+block style
+    style 
+        include ../static/style.css  
+block content 
+    section#introsection 
+        div welcome to dance  academy 
+        div.small  eat  sleep dance repeat  
+    section#mission 
+        h2 our mission
+        div.card 
+            h3 Dance perfection 
+            .card-box 
+                .card-img 
+                    img(src="/static/card.png", alt="", srcset="")
+                div.card-content  
+                    p this is best dance academy  
+
+        div.card 
+            h3 Benfites of dance 
+            .card-box 
+                .card-img 
+                    img(src="/static/images.jpeg", alt="", srcset="")
+                div.card-content  
+                    p this is best dance academy  
+
+        div.card 
+            h3 Let's dance
+            .card-box 
+                .card-img 
+                    img(src="/static/download.png", alt="", srcset="")
+                div.card-content  
+                    p this is best dance academy  
+         
+    section#sponsersection 
+        h2 Our sponser 
+        #sponser 
+            img(src="/static/apple.png", class="spimage" alt="", srcset="")
+            img(src="/static/hp.png",class="spimage" alt="", srcset="") 
+            img(src="/static/microsoft.png",class="spimage" alt="", srcset="") 
+    section#contact 
+        h2 Contact-Us 
+        input(type="text" name="name" placeholder="enter your name")    
+        input(type="email" name="email" placeholder="enter your email")   
+        input(type="text" name="address" placeholder="enter your address")   
+        input(type="date" name="date" placeholder="enter your date")
+        input(type="text" name="about" placeholder="tell something about you")
+        input(type="phone" name="phone" placeholder="enter your phone")         
+            
+    footer#footer 
+        |copyright@2021 of dance website are reserved          

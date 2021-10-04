@@ -1,0 +1,46 @@
+extend base.pug
+
+block style     
+    style 
+        include ../static/style.css 
+block content 
+    section#introsection 
+        div welcome to dance  academy 
+        div.small  eat  sleep dance repeat  
+    section#mission 
+        h2 our mission
+        div.card 
+            h3 Dance perfection 
+            .card-box 
+                .card-img 
+                    img(src="/static/card.png", alt="", srcset="")
+                div.card-content  
+                    p this is best dance academy  
+
+        div.card 
+            h3 Benfites of dance 
+            .card-box 
+                .card-img 
+                    img(src="/static/images.jpeg", alt="", srcset="")
+                div.card-content  
+                    p this is best dance academy  
+
+        div.card 
+            h3 Let's dance
+            .card-box 
+                .card-img 
+                    img(src="/static/download.png", alt="", srcset="")
+                div.card-content  
+                    p this is best dance academy  
+         
+    section#sponsersection 
+        h2 Our sponser 
+        #sponser 
+            img(src="/static/apple.png", class="spimage" alt="", srcset="")
+            img(src="/static/hp.png",class="spimage" alt="", srcset="") 
+            img(src="/static/microsoft.png",class="spimage" alt="", srcset="") 
+    
+    footer#footer 
+        |copyright@2021 of dance website are reserved              
+    script 
+        include ../static/index.js         
